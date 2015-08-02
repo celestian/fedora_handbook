@@ -1,0 +1,43 @@
+% Redefnice fontů pro různé účely v rámci KOMA-Scriptu
+
+  \addtokomafont{title}{\setfonts[Helvetica-bf/]}
+  \addtokomafont{subtitle}{\setfonts[Helvetica-rm/]}
+  \addtokomafont{part}{\setfonts[Helvetica-bf/]}
+  \addtokomafont{partnumber}{\setfonts[Helvetica-bf/]}
+  \addtokomafont{chapter}{\setfonts[Helvetica-bf/]}
+  \addtokomafont{section}{\setfonts[Helvetica-it/]}
+  \addtokomafont{sectioning}{\setfonts[Helvetica-bf/]}
+  \addtokomafont{subsection}{\setfonts[Helvetica-rm/]}
+  \addtokomafont{subsubsection}{\setfonts[Helvetica-rm/]}
+  \addtokomafont{paragraph}{\setfonts[Helvetica-rm/]}
+  \addtokomafont{subparagraph}{\setfonts[Helvetica-rm/]}
+  \addtokomafont{descriptionlabel}{\setfonts[Helvetica-bf/]}
+
+  \addtokomafont{caption}{\setfonts[Lido-rm/]}
+  \addtokomafont{captionlabel}{\setfonts[Lido-it/]}
+
+  \addtokomafont{pagehead}{\setfonts[Helvetica-it/]}
+  \addtokomafont{pagefoot}{\setfonts[Helvetica-it/]}
+  \addtokomafont{pagenumber}{\setfonts[Lido-crm/]}
+
+  \addtokomafont{dictumauthor}{\setfonts[Lido-it/]}
+  \addtokomafont{dictumtext}{\setfonts[Lido-rm/]}
+
+  \addtokomafont{footnote}{\setfonts[Lido-rm/]}
+  \addtokomafont{footnotelabel}{\setfonts[Lido-crm/]}
+  \addtokomafont{footnotereference}{\setfonts[Lido-crm/]}
+
+  \addtokomafont{footnote}{\footnotesize}
+
+% Toto scrbook nezna!
+
+	%\addtokomafont{fromaddress}{\setfonts[Lido-rm/]}
+	%\addtokomafont{fromname}{\setfonts[Lido-rm/]}
+	%\addtokomafont{backaddress}{\setfonts[Lido-rm/]}
+	%\addtokomafont{subject}{\setfonts[Lido-rm/]}
+
+\usepackage{slido}
+
+% redefinice normalního fontu
+	\renewcommand{\familydefault}{sld}
+	\renewcommand{\normalfont}{\setfonts[Lido-rm/]}
