@@ -1,0 +1,56 @@
+\documentclass[a5paper,
+              twoside,
+              headings=small,
+              titlepage=firstiscover,
+              numbers=noenddot]{scrbook}
+
+\usepackage[sjannon] {ofs}\OFSfamilydefault [JannonTModerne]
+
+\usepackage{ucs} 						
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+\usepackage{url}
+
+\usepackage{tikz}
+\usetikzlibrary{shadows}
+
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{\arabic{figure}}
+
+\newcommand*\keystroke[1]{%
+  \tikz[baseline=(key.base)]
+    \node[%
+      draw,
+      fill=white,
+      drop shadow={shadow xshift=0.25ex,shadow yshift=-0.25ex,fill=black,opacity=0.75},
+      rectangle,
+      rounded corners=2pt,
+      inner sep=1pt,
+      line width=0.5pt,
+      font=\scriptsize\sffamily
+    ](key) {#1\strut}
+  ;
+}
+
+
+\begin{document}
+
+\title{Začínáme s~Fedorou}
+\subtitle{seznámení s~operačním systémem a první kroky v~systému}
+\date{}
+\maketitle
+
+\cleardoublepage
+
+\include{01_uvod}
+\include{02_o_cem}
+\include{03_ziskat}
+%\include{chap_prvni_kroky_v_systemu}
+%\include{chap_jak_fedoru_prizpusobit}
+%\include{chap_chcete_vedet_vic}
+
+\end{document}
+\endiput
