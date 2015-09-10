@@ -29,7 +29,8 @@ Pro poslední dva body platí zásadní věc. Musíme si pečlivě ověřit, na 
 
 \item\emph{Úvodní obrazovka} -- po úspěšném nabootování uvidíme úvodní obrazovku, kde můžeme volit primárně mezi samotnou instalaci Fedory (a bootování do živého obrazu), nebo ověřením instalačního média. Zvolíme-li instalaci, budeme zanedlouho postaveni před volbu, jestli si chceme systém vyzkoušet, nebo nainstalovat na pevný disk. První volba není fatální, Fedoru můžeme zkoušet libovolně dlouho a k~instalaci se kdykoliv vrátit přes ikonu v~menu.
 
-\item\emph{GNOME Shell} -- pokud jsme zvolili možnost vyzkoušet, uvidíme před sebou tzv. prostředí \emph{GNOME~Shell}, na první pohled výrazné nahoře umístěným panelem se základními ovládacími prvky. Vlevo nahoře je klíčové tlačítko činnosti, přes které se lze dostat k~nainstalovaným aplikacím (a zmíněné možnosti instalovat systém), vpravo naopak menu relevantní zejména pro nastavení sítě a možnosti restartu či vypnutí systému. %tomuhle odstavci nerozumim "na první pohled výrazné nahoře umístěným panelem se základními ovládacími prvky"
+\item\emph{GNOME Shell} -- pokud jsme zvolili možnost vyzkoušet, uvidíme před sebou tzv. prostředí \emph{GNOME~Shell}, na první pohled výrazné nahoře umístěným\footnote{\uv{na první pohled výrazné nahoře umístěným} -- tohle mi moc nedává smysl, lepší formulace?}%TODO
+panelem se základními ovládacími prvky. Vlevo nahoře je klíčové tlačítko činnosti, přes které se lze dostat k~nainstalovaným aplikacím (a zmíněné možnosti instalovat systém), vpravo naopak menu relevantní zejména pro nastavení sítě a možnosti restartu či vypnutí systému.
 
 \begin{figure}[t]
 \begin{center}
@@ -38,11 +39,14 @@ Pro poslední dva body platí zásadní věc. Musíme si pečlivě ověřit, na 
 \end{center}
 \end{figure}
 
-\item\emph{Instalátor} -- když zvolíme možnost instalovat na pevný disk, jsme postupně provázeni pomocí přehledného průvodce. Volíme krok za krokem jazyková nastavení, časové pásmo, až se dostaneme k~bodu rozdělení disku. Čili k~zásadnímu bodu řešícímu, kam se Fedora fyzicky nainstaluje. Fedora nabízí automatické rozložení, kdy oddíly vytvoří sama, a samozřejmě i rozdělení ruční. Je také možné nastavit, které oddíly budou šifrované. %zcela určitě ne kdy
+\item\emph{Instalátor} -- když zvolíme možnost instalovat na pevný disk, jsme postupně provázeni pomocí přehledného průvodce. Volíme krok za krokem jazyková nastavení, časové pásmo, až se dostaneme k~bodu rozdělení disku. Čili k~zásadnímu bodu řešícímu, kam se Fedora fyzicky nainstaluje. Fedora nabízí automatické rozložení, kdy\footnote{Zde se více hodí formulace \uv{při kerém} než kdy.}%TODO
+oddíly vytvoří sama, a samozřejmě i rozdělení ruční. Je také možné nastavit, které oddíly budou šifrované.
 
 \item\emph{Pevný disk} -- Fedora v~této fázi umožňuje i vytvoření tzv. dualbootu, čili provozování dvou operačních systémů v~rámci jednoho počítače. Není problém ji tak doinstalovat vedle už existující instalace \emph{MS~Windows}. V~rámci dialogu je vlevo po celou dobu k~dispozici přehled existujících oddílů. Než změny potvrdíte, pečlivě si zkontrolujte, že jsou tam všechny (např. oddíly jiných operačních systému), které tam mají být. Po odsouhlasení tohoto kroku proběhnou nevratné změny a zápis nového rozložení na disk.
 
-\item\emph{Závěr} -- zatímco se systém instaluje, vyplníme několik zásadních údajů jako je heslo roota (administrátora) a vytvoříme uživatelský účet, pod kterým budeme běžně pracovat (a opět mu nastavíme heslo). Pozor, Fedora uplatňuje, na rozdíl od mnoha dalších linuxových distribucí, klasický přístup k~uživatelským účtům, kdy účet uživatele root není zakázaný. Potřebujeme tedy nastavit a znát minimálně dvě hesla. Nevyhovuje vám toto nastavení? Nevadí, i u~našeho běžného účtu můžeme zaškrtnout volbu \uv{Správce}, která nám umožní velkou část správcovské činnosti stvrdit i pod naším běžným účtem a tedy i jeho heslem.%vyplníme jako je... a co čárka?; kdy jako spojka?
+\item\emph{Závěr} -- zatímco se systém instaluje, vyplníme několik zásadních údajů jako\footnote{Před jako by myslím měla být čárka, neboť tu vidím dva přísudky: vyplníme, je.}%TODO
+je heslo roota (administrátora) a vytvoříme uživatelský účet, pod kterým budeme běžně pracovat (a opět mu nastavíme heslo). Pozor, Fedora uplatňuje, na rozdíl od mnoha dalších linuxových distribucí, klasický přístup k~uživatelským účtům, kdy\footnote{\uv{Kdy} je spojka časová. Přístup, při kterém...}%TODO
+účet uživatele root není zakázaný. Potřebujeme tedy nastavit a znát minimálně dvě hesla. Nevyhovuje vám toto nastavení? Nevadí, i u~našeho běžného účtu můžeme zaškrtnout volbu \uv{Správce}, která nám umožní velkou část správcovské činnosti stvrdit i pod naším běžným účtem a tedy i jeho heslem.
 
 \item\emph{A~je hotovo} -- celá instalace by neměla zabrat více než několik desítek minut. Po restartu a přihlášení provedeme ještě několik krátkých poinstalačních nastavení (a pokud jsme měnili nastavení bootování, uvedeme ho do původního stavu) a systém je připraven. Zdařilo se? Můžeme tak začít používat Fedoru v~celé její kráse!
 \end{enumerate}
