@@ -3,86 +3,80 @@
 \section*{Rozkoukáváme se}
 Máme před sebou prostředí GNOME Shell. Klíčovým místem pro nás je už zmíněný levý horní roh (tlačítko \emph{Činnosti}), přes který se dostaneme k~vlevo umístěnému menu s~oblíbenými aplikacemi. Stačí do něj najet myší (nebo stisknout levou klávesu \uv{Super}, \uv{Start}, \uv{Meta}, nebo jak ji sami znáte). Jak se dostat ke všem aplikacím? V~menu nalezneme zcela dole ikonu se sadou čtverců \emph{Zobrazit aplikace}. Klikneme na ni a nyní máme aplikace přehledně vyskládané před sebou. Prostředí je velmi intuitivní. Znáte název aplikace? Nebo jen pár prvních písmen? Pak stačí začít psát (nebo použít vyhledávací pole zcela nahoře). Vyhledávání ale neprobíhá pouze mezi aplikacemi, hledá se i mezi kontakty, soubory, možnostmi nastavení a dalšími prvky.
 
-\section*{Pojďme o~něco hlouběji}
-Na co se dále zaměřit při běžné práci v~\emph{GNOME}? Předně si všimněte, že okna mají pouze tlačítko pro zavření. Proč je tomu tak, si vysvětlíme při popisu dalšího režimu, minimalizace v~prostředí \emph{GNOME} totiž postrádá smysl a maximalizovat okno lze tažením k~horní hraně obrazovky nebo poklikáním na lištu okna. Úkolem prostředí v~tomto režimu je co nejméně překážet, proto je zobrazen pouze horní panel. Na následujícím obrázku si vysvětlíme hlavní prvky tohoto režimu.
-
 \begin{figure}[t]
 \begin{center}
 \includegraphics[width=\textwidth]{img/shell-a}
-\captionbelow{shell-a.} \label{fig:shell-a}
+\captionbelow{Úvodní pohled na GNOME Shell} \label{fig:shell-a}
 \end{center}
 \end{figure}
+
+\section*{Pojďme o~něco hlouběji}
+Na co se dále zaměřit při běžné práci v~\emph{GNOME}? Předně si všimněte, že okna mají pouze tlačítko pro zavření. Proč je tomu tak, si vysvětlíme při popisu dalšího režimu, minimalizace v~prostředí \emph{GNOME} totiž postrádá smysl a maximalizovat okno lze tažením k~horní hraně obrazovky nebo poklikáním na lištu okna. Úkolem prostředí v~tomto režimu je co nejméně překážet, proto je zobrazen pouze horní panel. Na následujícím obrázku si vysvětlíme hlavní prvky tohoto režimu.
 
 \begin{enumerate}
 \item\emph{Činnosti} -- jde o~už výše zmíněný prvek, který slouží pro přepnutí do režimu \emph{Činnosti}, jenž je detailněji popsán níže. Je to výchozí bod, přes který se dostaneme k~většině úkonů, které chceme v~systému provádět.
 
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width=\textwidth]{img/menu-aplikace}
-\captionbelow{menu-aplikace.} \label{fig:menu-aplikace}
-\end{center}
-\end{figure}
-
 \item\emph{Nabídka aplikace} -- pod ikonou momentálně aktivní aplikace naleznete nabídku, která se týká aplikace jako celku (nastavení aplikace, o~aplikaci apod.). Nabídky, které se týkají jednotlivých oken, se nalézají přímo v~okně aplikace. Ne každá aplikace tuto nabídku má. Pokud ji nemá, naleznete pod tímto tlačítkem pouze volbu \emph{Ukončit}.
 
-
 \begin{figure}[t]
 \begin{center}
-\includegraphics[width=\textwidth]{img/kalendar}
-\captionbelow{kalendar.} \label{fig:kalendar}
+\includegraphics[width=0.45\textwidth]{img/menu-aplikace}
+\captionbelow{Nabídka aplikace} \label{fig:menu-aplikace}
 \end{center}
 \end{figure}
-
 
 \item\emph{Hodiny a kalendář} -- pod zobrazením aktuálního dne a času naleznete kalendář a zmeškaná upozornění. Pokud využíváte jednu z~aplikací, které využívají kalendářový backend \emph{GNOME} (např. \emph{Evolution}), zobrazí se zde i události, které jste v~těchto aplikacích do kalendáře dříve uložili.
 
-\begin{figure}[t]
+\begin{figure}[p]
 \begin{center}
-\includegraphics[width=\textwidth]{img/menu}
-\captionbelow{menu.} \label{fig:menu}
+\includegraphics[width=0.85\textwidth]{img/kalendar}
+\captionbelow{Hodiny a kalendář} \label{fig:kalendar}
+
+\bigskip
+
+\includegraphics[width=0.45\textwidth]{img/menu}
+\captionbelow{Nabídka uživatele} \label{fig:menu}
 \end{center}
 \end{figure}
 
 \item\emph{Nabídka uživatele} -- v~pravém horním rohu jsou k~dispozici nejdůležitější indikátory (připojení, zvuk, baterie atd.). Po kliknutí na ně se zobrazí nabídka, v~níž můžete nastavit hlasitost, úroveň jasu, připojení k~internetu, bluetooth a další věci. Třetí část nabídky obsahuje vaše jméno s~možnostmi odhlášení se nebo přepnutí do jiného uživatelského účtu. Zcela dole naleznete tři ikony. Ikona nalevo spouští nastavení systému, ta prostřední zamyká obrazovku a ikona napravo vám nabídne restartování nebo vypnutí systému.
 \end{enumerate}
 
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width=\textwidth]{img/shell-b}
-\captionbelow{shell-b.} \label{fig:shell-b}
-\end{center}
-\end{figure}
-
 \section*{K~čemu slouží \emph{Činnosti}?}
 Tento režim je určen pro spouštění aplikací, přepínání mezi nimi, přepínání mezi virtuálními plochami, organizaci desktopu a vyhledávání. Uprostřed obrazovky naleznete náhledy otevřených oken, které slouží k~přepínání mezi aplikacemi. Vzhledem k~tomu, že v~\emph{Činnostech} se poskládají do dlaždice všechna otevřená okna, nemá minimalizace oken smysl a, jak již bylo zmíněno, \emph{GNOME} ji nezná. Na následujícím obrázku můžete vidět další důležité prvky tohoto režimu
 
 \begin{figure}[t]
 \begin{center}
-\includegraphics[width=\textwidth]{img/dash-b}
-\captionbelow{dash-b.} \label{fig:dash-b}
+\includegraphics[width=\textwidth]{img/shell-b}
+\captionbelow{Obrazovka Činností} \label{fig:shell-b}
 \end{center}
 \end{figure}
 
 \begin{enumerate}
 \item \emph{Dash} -- jedná se o~panel (\uv{menu}), na kterém naleznete spuštěné a oblíbené aplikace. Odlišíte je tak, že ty spuštěné jsou výrazně podtržené. Pokud chcete aplikaci zařadit mezi oblíbené, klikněte na ni v~Dashi pravým tlačítkem myši a vyberte \emph{Přidat mezi oblíbené}.
 
-\begin{figure}[t]
+\begin{figure}[p]
 \begin{center}
-\includegraphics[width=\textwidth]{img/dash-a}
-\captionbelow{dash-a.} \label{fig:dash-a}
+\includegraphics[width=0.45\textwidth]{img/dash-b}
+\captionbelow{Práce s aplikacemi v Dashi} \label{fig:dash-b}
+
+\bigskip
+
+\includegraphics[width=0.45\textwidth]{img/dash-a}
+\captionbelow{Zobrazení všech aplikací} \label{fig:dash-a}
 \end{center}
 \end{figure}
 
 \item \emph{Zobrazit aplikace} -- opět již zmíněný prvek. Toto tlačítko zobrazí spouštěče aplikací. V~dolní části obrazovky pak můžete přepínat mezi často používanými aplikacemi a všemi aplikacemi.
 
+\item \emph{Vyhledávání} -- prostředí \emph{GNOME} nabízí také velmi mocné desktopové vyhledávání. Nemusíte do vyhledávacího pole klikat, po přepnutí do režimu \emph{Činnosti} můžete začít rovnou psát a vyhledávání se aktivuje. Jedná se o~nejrychlejší způsob, jak spouštět aplikace. Kromě nich ale můžete vyhledávat také dokumenty, obrázky, virtuální stroje, aplikace k~instalaci, kontakty, atd. Nebo také provádět jednoduché výpočty. Co se má v~\emph{Činnostech} vyhledávat, můžete nastavit v~systémových nastaveních pod položkou \emph{Hledání}.
+
 \begin{figure}[t]
 \begin{center}
-\includegraphics[width=\textwidth]{img/vyhledavani}
-\captionbelow{vyhledavani.} \label{fig:vyhledavani}
+\includegraphics[width=0.85\textwidth]{img/vyhledavani}
+\captionbelow{Integrované vyhledávání} \label{fig:vyhledavani}
 \end{center}
 \end{figure}
-
-\item \emph{Vyhledávání} -- prostředí \emph{GNOME} nabízí také velmi mocné desktopové vyhledávání. Nemusíte do vyhledávacího pole klikat, po přepnutí do režimu \emph{Činnosti} můžete začít rovnou psát a vyhledávání se aktivuje. Jedná se o~nejrychlejší způsob, jak spouštět aplikace. Kromě nich ale můžete vyhledávat také dokumenty, obrázky, virtuální stroje, aplikace k~instalaci, kontakty, atd. Nebo také provádět jednoduché výpočty. Co se má v~\emph{Činnostech} vyhledávat, můžete nastavit v~systémových nastaveních pod položkou \emph{Hledání}.
 
 \item \emph{Virtuální plochy} -- na levé straně můžeme najít náhledy virtuálních ploch, kterých lze mít více, aniž by bylo nutné mít více monitorů. Slouží k~organizaci oken a aplikací. \emph{GNOME} nemá fixní počet ploch. Naopak, jejich počet je dynamický. Je jich vždycky tolik, na kolika z~nich máte aktuálně umístěná okna, a jednu prázdnou navíc, která je připravená k~použití. Když na ni přetáhnete okno, vytvoří se další prázdná a naopak. Přetahovat okna mezi plochami můžete přímo v~náhledech, případně můžete přetáhnout náhled ze středu obrazovky do jednoho z~náhledů. Přepínat mezi virtuálními plochami můžete také přímo v~pracovním režimu pomocí klávesové zkratky $\keystroke{Ctrl}+\keystroke{Alt}+\keystroke{šipka $\uparrow$}\,/\,\keystroke{šipka $\downarrow$}$.
 
@@ -96,7 +90,7 @@ Tento režim je určen pro spouštění aplikací, přepínání mezi nimi, pře
 \begin{figure}[t]
 \begin{center}
 \includegraphics[width=\textwidth]{img/nastaveni}
-\captionbelow{nastaveni.} \label{fig:nastaveni}
+\captionbelow{Uživatelská a systémová nastavení} \label{fig:nastaveni}
 \end{center}
 \end{figure}
 
@@ -109,7 +103,7 @@ Fedora už v~základu obsahuje mnoho potřebných aplikací (webový prohlíže�
 \begin{figure}[t]
 \begin{center}
 \includegraphics[width=\textwidth]{img/software}
-\captionbelow{software.} \label{fig:software}
+\captionbelow{Správa software ve Fedoře} \label{fig:software}
 \end{center}
 \end{figure}
 
