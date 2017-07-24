@@ -6,8 +6,7 @@
 
 \usepackage[sjannon] {ofs}\OFSfamilydefault [JannonTModerne]
 
-\usepackage{ucs} 						
-\usepackage[czech]{babel}
+\usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
@@ -38,24 +37,50 @@
 
 \begin{document}
 
-\title{Začínáme s~Fedorou}
-\subtitle{seznámení s~operačním systémem a první kroky v~systému}
+\title{Fedora Workstation}
+\subtitle{An Introduction and First Steps Guide}
 \date{}
 \maketitle
 
 \cleardoublepage
 
-\include{01_uvod}
-\include{02_o_cem}
-\include{03_ziskat}
-\include{04_kroky}
-\include{05_prizpusobeni}
-\include{06_vedet_vic}
+\include{01_introduction}
+\include{02_what_is_fedora_about}
+\include{03_how_to_get_fedora}
+\include{04_first_steps_in_system}
+\include{05_how_to_tweak_fedora}
+\include{06_you_want_to_know_more}
 
 \backmatter
 \renewcommand*{\chapterpagestyle}{empty}
 \cleardoubleplainpage
-\include{tiraz}
+%\include{tiraz}
 
 \end{document}
 \endinput
+
+
+= Fedora Workstation
+An Introduction and First Steps Guide
+
+:doctype: book
+:listing-caption: Listing
+:pdf-page-size: A5
+:icons: font
+:experimental:
+
+include::01-introduction.adoc[]
+
+include::02-what-is-fedora-about.adoc[]
+
+include::03-how-to-get-fedora.adoc[]
+
+include::04-first-steps-in-system.adoc[]
+
+include::05-how-to-tweak-fedora.adoc[]
+
+include::06-you-want-to-know-more.adoc[]
+
+<<<
+
+include::credits.adoc[]
