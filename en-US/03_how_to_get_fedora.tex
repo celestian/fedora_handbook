@@ -1,17 +1,30 @@
 \chapter*{How to Get Fedora?}
 \section*{Getting Fedora}
 
-You can install Fedora from optical media (CD, DVD), a USB flash drive, or over the network by using an appropriate installation image. Installation images of \emph{Fedora~Workstation} are available for download in the ISO format at \url{getfedora.org}. \emph{Fedora Workstation} defaults to a 64-bit operating system download as that is what is best for most users.
+You can install Fedora from a USB flash drive, optical media (DVD), or over the network by using an appropriate installation image. Installation images of \emph{Fedora~Workstation} are available for download in the ISO format at \url{getfedora.org}. \emph{Fedora Workstation} defaults to a 64-bit operating system download as that is what is best for most users.
 
-If you aren't ready to install Fedora yet and would like to try it first without losing or changing anything already on your PC, make sure you download a live image. With this image, you can boot to a fully functional system and find out what Fedora is like, experiment with it, and determine whether it fully supports your PC's hardware.
+If you aren't ready to install Fedora yet and would like to try it first without losing or permanently changing anything on your PC, make sure you download a live image. With this image, you can boot to a fully functional system and find out what Fedora is like, experiment with it, and determine whether it fully supports your PC's hardware.
 
-To run \emph{Fedora Workstation} reasonably well it is recommend that you have at least a 1~GHz processor, 2~GiB of memory, 10~GiB of hard drive space, and a graphics card that supports hardware acceleration. These aren't the minimum requirements, but they are the best for most users. Some users may wish to run Fedora on lower powered machines and will find it performs well there too.
+To run \emph{Fedora Workstation} reasonably well it is recommend that you have at least a 1~GHz processor, 2~GiB of memory, 10~GiB of hard drive space, and a graphics card that supports hardware acceleration. These aren't the absolute minimum requirements, but they are the best for most users. Some users may wish to run Fedora on lower powered machines and will find it performs well on these, too.
 
 \section*{Creating Installation Media}
 
 In order to install or run Fedora from an installation image, you need to create installation media first:
 \begin{itemize}
-\item\emph{USB Installation} --- To create a USB installation drive, you can use the \emph{Fedora Media Writer}. It can run on \emph{MS Windows}, \emph{Apple macOS} or Linux. Beware, this program will erase all the data on the flash drive! \emph{Fedora Media Writer} can download the installation image for you when you run it. If you're using \emph{MS Windows} or \emph{Apple macOS}, the installation file of the application is what you'll be offered when you decide to download \emph{Fedora Workstation} at \url{getfedora.org}.
+\item\emph{USB Installation} --- To create a USB installation drive, you can use the \emph{Fedora Media Writer}. It can run on \emph{MS Windows}, \emph{Apple macOS} or Linux. Beware---this program will erase all the data on the flash drive! \emph{Fedora Media Writer} can download the installation image and verify it's been correctly downloaded and really comes from the \emph{Fedora Project}. If you're using \emph{MS Windows} or \emph{Apple macOS}, the installation file of the application is what you'll be offered when you decide to download \emph{Fedora Workstation} at \url{getfedora.org}. The Linux version of \emph{Fedora Media Writer} can be found in the universal installation format \emph{Flatpak} at \url{flathub.org}.
+
+As you can see in the picture, \emph{Fedora Media Writer} allows you to pick different flavors of \emph{Fedora}. We recommend you choose \emph{Fedora Workstation} since it's the default option for general desktop use, and it's the flavor this handbook is about.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=.75\textwidth]{img/fedora-media-writer}
+\captionbelow{Different flavors of Fedora in Fedora Media Writer} \label{fig:fedora_media_writer}
+\end{center}
+\end{figure}
+
+Once you install \emph{Fedora Workstation}, you might want to reformat the USB drive to use it as data storage again. \emph{Fedora Media Writer} can do that for you as well.
+
+%TODO: ended here
 
 \emph{GNOME and Disks} --- If you already use a Linux operating system with the GNOME desktop environment, you can use built-in software to write to a USB drive. In the \emph{Files} application, right-click an ISO image, choose \enquote{Open in a different app} and then choose \enquote{Write on disk}. This will open the \emph{Disks} utility which will write the image on to a flash drive.
 
