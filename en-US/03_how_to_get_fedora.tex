@@ -3,7 +3,7 @@
 
 You can install Fedora from a USB flash drive, optical media (DVD), or over the network by using an appropriate installation image. Installation images of \emph{Fedora~Workstation} are available for download in the ISO format at \url{getfedora.org}. \emph{Fedora Workstation} defaults to a 64-bit operating system download as that is what is best for most users.
 
-If you aren't ready to install Fedora yet and would like to try it first without losing or permanently changing anything on your PC, make sure you download a live image. With this image, you can boot to a fully functional system and find out what Fedora is like, experiment with it, and determine whether it fully supports your PC's hardware.
+If you aren't ready to install Fedora yet and would like to try it first without losing or permanently changing anything on your PC, make sure you download a live image. With this image, you can boot to a~fully functional system and find out what Fedora is like, experiment with it, and determine whether it fully supports your PC's hardware.
 
 To run \emph{Fedora Workstation} reasonably well it is recommend that you have at least a 1~GHz processor, 2~GiB of memory, 10~GiB of hard drive space, and a graphics card that supports hardware acceleration. These aren't the absolute minimum requirements, but they are the best for most users. Some users may wish to run Fedora on lower powered machines and will find it performs well on these, too.
 
@@ -24,18 +24,18 @@ As you can see in the picture, \emph{Fedora Media Writer} allows you to pick dif
 
 Once you install \emph{Fedora Workstation}, you might want to reformat the USB drive to use it as data storage again. \emph{Fedora Media Writer} can do that for you as well.
 
-%TODO: ended here
-
-\emph{GNOME and Disks} --- If you already use a Linux operating system with the GNOME desktop environment, you can use built-in software to write to a USB drive. In the \emph{Files} application, right-click an ISO image, choose \enquote{Open in a different app} and then choose \enquote{Write on disk}. This will open the \emph{Disks} utility which will write the image on to a flash drive.
-
-If you decide to write the installation image on to a USB flash drive, carefully double-check that you've picked the correct target drive. If you're doing this on \emph{MS Windows}, you need to pick the character that has been assigned to the drive you'd like to use (typically this will be \texttt{D:} or \texttt{E:}). On Linux, you need to do the same using the device (typically this is will be \texttt{/dev/sdX} where \texttt{X} is an alphabetic character). The easiest and safest way to do this on Linux is to use the \emph{Disks} utility mentioned above.
-
-\item\emph{DVD Installation} --- Using a \emph{DVD} is a very traditional way of installing Fedora. You can create an installation DVD by writing an ISO image to a DVD. Most modern operating systems can do this operation with built-in software. If not, you can install a specialized application such as \emph{Brasero} on Linux and \emph{ImgBurn} on \emph{MS Windows}. All versions of \emph{Apple macOS} can write DVDs using \emph{Finder} and \emph{Disk Utility}.
+\item\emph{DVD Installation} --- Using a DVD is a very traditional way of~installing Fedora. You can create an installation DVD by writing an ISO image to a DVD. Most modern operating systems can do this operation with built-in software. If not, you can install a specialized application such as \emph{Brasero} on Linux and \emph{ImgBurn} on \emph{MS Windows}. All versions of \emph{Apple macOS} can write DVDs using \emph{Finder} and \emph{Disk Utility}.
 \end{itemize}
+
+\section*{Installing Fedora}
+\begin{enumerate}
+\item\emph{Booting} --- No matter what media you've chosen, you'll need to make sure that you set the right boot sequence in the BIOS of the computer you'd like to install \emph{Fedora~Workstation} on. The drive with the install media needs to be in the first position. You can get to the BIOS configuration by pressing a specific key after starting the computer. The key depends on the vendor (typically the keys are \keystroke{Delete}, \keystroke{F1}, or \keystroke{F2}). Alternately, many vendors allow you to choose a boot drive without having to go to the BIOS settings by pressing the \keystroke{F12} key.
+
+\item\emph{Initial Screen} --- After successfully booting from the installation media, you'll see the initial screen where you can choose between starting the \emph{Fedora~Workstation} live system and verifying the install media. If you choose starting the live system, you'll boot into the live system and will be asked if you want to try the system out or install it on the hard drive. If you choose to \enquote{Try Fedora} you can use it in this way for as long as you want and can choose to perform an installation at any time by clicking on the installer icon in the menu.
 
 \begin{figure}[p]
 \begin{center}
-\includegraphics[width=.75\textwidth]{img/instalator-a}
+\includegraphics[width=.75\textwidth]{img/installer-a}
 \captionbelow{Booted installation media of Fedora Workstation} \label{fig:installer-a}
 %\end{center}
 %\end{figure}
@@ -47,29 +47,22 @@ If you decide to write the installation image on to a USB flash drive, carefully
 \end{center}
 \end{figure}
 
-\section*{Installing Fedora}
-\begin{enumerate}
-\item\emph{Booting} --- No matter what media you've chosen, you'll need to make sure that you set the right boot sequence in the BIOS of the computer you'd like to install \emph{Fedora~Workstation} on. The drive with the install media needs to be in the first position. You can get to the BIOS configuration by pressing a specific key after starting the computer. The key depends on the vendor (typically the keys are \keystroke{Delete}, \keystroke{F1}, or \keystroke{F2}). Alternately, many vendors allow you to choose a boot drive without having to go to the BIOS settings by pressing the \keystroke{F12} key.
+\item\emph{Trying the System} --- If you've chosen to try the system, you'll begin using the \emph{GNOME~Shell}, a desktop environment. The top of the display contains the most commonly used control elements. There is an \emph{Activities} button in the upper left corner which will get you to applications (and to the option to install \emph{Fedora Workstation} on your system). The upper right corner has controls that allow you to set up the network, as well as to restart or shut down the system.
 
-\item\emph{Initial Screen} --- After successfully booting from the installation media, you'll see the initial screen where you can choose between installing \emph{Fedora~Workstation} (or booting into the live system) and verifying the install media. If you choose installation, you'll boot into the live system and will be asked if you want to try the system out or install it on the hard drive. If you choose to \enquote{Try Fedora} you can use it in this way for as long as you want and can choose to perform an installation at any time by clicking on the installer icon in the menu.
-
-\item\emph{Trying the System} --- If you've chosen to try the system, you'll begin using the \emph{GNOME~Shell}. The top of the display contains the most commonly used control elements. There is an \emph{Activities} button in the upper left corner which will get you to applications (and to the option to install \emph{Fedora Workstation} on your system). The upper right corner has controls that allow you to set up the network, as well as to restart or shut down the system.
-
-\item\emph{Installer} --- Once you decide to install \emph{Fedora Workstation}, you'll being using the installation program, Anaconda. The installer consists of different spokes that manage the options for areas such as language settings, time zone, etc.
+\item\emph{Installer} --- Once you decide to install \emph{Fedora Workstation}, go to \emph{Activities} and click the \emph{Install to Hard Drive} icon on the panel on the left. You'll being using the installation program, Anaconda. The installer consists of different screens that manage the options for areas such as language settings, time zone, etc.
 
 The disk partitioning spoke is the most important part of the installer. This spoke will define where on your hard drive \emph{Fedora Workstation} will be installed. The installer offers you automatic partitioning which will configure the hard drive in a way that is useful for most people, or you can also choose manual partitioning and apply a customized setting. It is also possible to set up encryption for better security.
 
-\emph{Fedora Workstation} also allows you to create a dualboot system, that is, to have two operating systems installed on your PC at the same time. It's easy to install \emph{Fedora Workstation} next to an existing \emph{MS Windows} installation.
+\emph{Fedora Workstation} also allows you to create a dual-boot system, that is, to have two operating systems installed on your PC at the same time. It's easy to install \emph{Fedora Workstation} next to an existing \emph{MS Windows} installation. If you do this, you will be able to choose which system to boot every time you restart your computer.
 
 In the partitioning dialog, you will see the existing partitions on the left. Before you confirm the changes make sure that everything is the way you meant it to be (for example that all partitions of other operating systems are still there, if you wish to keep them). When you confirm the changes and start the installation, the changes will be final.
 
-\item\emph{Finishing the Installation} --- While the system is being installed, you need to provide several important pieces of information such as the root or administrator password and the information for creating a user account.
+\item\emph{First boot} --- \emph{Fedora Workstation} Live installer doesn't require you to do anything while the system is being installed, so you can sit back or go to the kitchen to grab your favorite beverage. The whole installation should only take a few minutes.
 
-You will normally use the user account you created and only use the root password when you need to make a system-wide change. \emph{Fedora Workstation} has the classic approach to user accounts where the root account is not disabled. However, if you do not want to remember passwords for two accounts, you can check the \emph{Admin} option when creating your user account. This enables the account to act as an administrator in vast majority of operations and avoids your having to use the root password often.
+Once the installation is finished you will be prompted to reboot. Don't forget to change the boot order to the original state before you boot into the freshly installed system.
 \end{enumerate}
 
-And that's it. The whole installation should take less than several dozen minutes. After a restart you'll just need to perform a couple of short post-install tasks such as changing the boot order to the original state and then you're ready to go.
+On the first boot you will be asked to create a user account and set several initial preferences. Note that the user account is automatically set to be able to switch to the admin mode to perform administrator tasks. If you want to use the traditional \emph{root} account, you have to enable it after you log into the system for the first time.
 
 Everything worked well? Now you can start exploring \emph{Fedora Workstation}!
-
 \endinput
